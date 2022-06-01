@@ -1,8 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>URL</key>
-	<string>https://drive.google.com/file/d/134xWUjQ9jA4dqrfdNjuSbAFj3T1Qae_m/view?usp=drive_web&amp;authuser=1</string>
-</dict>
-</plist>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pierotti_Form</title>
+        
+    </head>
+    <body>
+    <form Action="Php_form1.php" method="POST">
+    <table border="2px" align="center">
+            <tr>
+                <td><b>FORM DI REGISTRAZIONE</b></td>
+            </tr>
+        </table> 
+     <fieldset>
+            <legend>Dati Personali:</legend>
+
+            <label for="Cognome">Cognome: </label>
+            <input type="text" id="Cognome" name="Cognome" placeholder="Inserisci il tuo cognome" required><br><br>
+                          
+            <label for="E-mail">E-mail: </label>
+            <input type="email" id="E-mail" name="E-mail" placeholder="example@gmail.com" required><br><br>
+            
+            <label for="nazione" >Nazione:</label>
+            <select name="nazione"  id="nazione">
+            <option value="italia">italia</option>
+            <option value="francia">francia</option>
+            <option value="spagna">spagna</option></select> <br>
+            
+            <label for="Data_di_nascita">Data di nascita: </label>
+            <input type="date" id="Data_di_nascita" name="Data_di_nascita" required><br><br>
+            
+            <label for="Sesso">Sesso:</label>
+            <input type="radio" name="Sesso" value="maschio" >Maschio:
+             <input type="radio" name="Sesso" value="Femmina"> Femmina:
+           
+        </fieldset>
+        <fieldset>
+       <legend>Certificazioni Aquisite: </legend>
+
+            <input type="checkbox" name="ECDL" id="Certificazioni">
+            <label for="Certificazioni">ECDL</label>
+            
+            <input type="checkbox" name="FIRST" id="Certificazioni">
+            <label for="Certificazioni">FIRST</label>
+           
+            
+            <input type="checkbox" name="PET" id="Certificazioni">
+            <label for="Certificazioni">PET</label>
+            </fieldset>
+            <input type="submit" id="INVIA" value="INVIA">
+        <input type="reset" id="ANNULLA" value="ANNULLA">
+        </form>
+    </body>
+</html>
